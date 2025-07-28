@@ -37,13 +37,6 @@ const Hero = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
             <div className="bg-card border border-border rounded-2xl p-8 shadow-card hover:shadow-glow transition-all duration-300">
-              <div className="mb-4">
-                <img 
-                  src={paymentGatewayImage} 
-                  alt="Payment Gateway Interface" 
-                  className="w-full h-48 object-cover rounded-xl mb-4"
-                />
-              </div>
               <div className="flex items-center mb-4">
                 <CreditCard className="w-8 h-8 text-primary mr-3" />
                 <h3 className="text-2xl font-semibold">Payment Gateway</h3>
@@ -51,19 +44,19 @@ const Hero = () => {
               <p className="text-muted-foreground mb-4">
                 Accept payments globally with our secure, scalable payment processing infrastructure supporting crypto and fiat currencies.
               </p>
+              <div className="mb-4">
+                <img 
+                  src={paymentGatewayImage} 
+                  alt="Payment Gateway Interface" 
+                  className="w-full h-48 object-cover rounded-xl"
+                />
+              </div>
               <Button variant="ghost" className="p-0 h-auto text-primary hover:text-primary/80">
                 Learn more <ArrowRight className="w-4 h-4 ml-1" />
               </Button>
             </div>
 
             <div className="bg-card border border-border rounded-2xl p-8 shadow-card hover:shadow-glow transition-all duration-300">
-              <div className="mb-4">
-                <img 
-                  src={crossBorderPaymentsImage} 
-                  alt="Cross-Border Payments Network" 
-                  className="w-full h-48 object-cover rounded-xl mb-4"
-                />
-              </div>
               <div className="flex items-center mb-4">
                 <Globe className="w-8 h-8 text-primary mr-3" />
                 <h3 className="text-2xl font-semibold">Cross-Border Payments</h3>
@@ -71,6 +64,13 @@ const Hero = () => {
               <p className="text-muted-foreground mb-4">
                 Enable instant, low-cost international transfers with our advanced cross-border payment solutions and global network.
               </p>
+              <div className="mb-4">
+                <img 
+                  src={crossBorderPaymentsImage} 
+                  alt="Cross-Border Payments Network" 
+                  className="w-full h-48 object-cover rounded-xl"
+                />
+              </div>
               <Button variant="ghost" className="p-0 h-auto text-primary hover:text-primary/80">
                 Learn more <ArrowRight className="w-4 h-4 ml-1" />
               </Button>
