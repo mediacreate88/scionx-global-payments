@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Globe, CreditCard, Zap } from "lucide-react";
+import paymentGatewayImage from "@/assets/payment-gateway.jpg";
+import crossBorderPaymentsImage from "@/assets/cross-border-payments.jpg";
 
 const Hero = () => {
   return (
@@ -35,6 +37,13 @@ const Hero = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
             <div className="bg-card border border-border rounded-2xl p-8 shadow-card hover:shadow-glow transition-all duration-300">
+              <div className="mb-4">
+                <img 
+                  src={paymentGatewayImage} 
+                  alt="Payment Gateway Interface" 
+                  className="w-full h-48 object-cover rounded-xl mb-4"
+                />
+              </div>
               <div className="flex items-center mb-4">
                 <CreditCard className="w-8 h-8 text-primary mr-3" />
                 <h3 className="text-2xl font-semibold">Payment Gateway</h3>
@@ -48,6 +57,13 @@ const Hero = () => {
             </div>
 
             <div className="bg-card border border-border rounded-2xl p-8 shadow-card hover:shadow-glow transition-all duration-300">
+              <div className="mb-4">
+                <img 
+                  src={crossBorderPaymentsImage} 
+                  alt="Cross-Border Payments Network" 
+                  className="w-full h-48 object-cover rounded-xl mb-4"
+                />
+              </div>
               <div className="flex items-center mb-4">
                 <Globe className="w-8 h-8 text-primary mr-3" />
                 <h3 className="text-2xl font-semibold">Cross-Border Payments</h3>

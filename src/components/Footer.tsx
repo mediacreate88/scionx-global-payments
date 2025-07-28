@@ -64,7 +64,7 @@ const Footer = () => {
 
         <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm">
-            © 2024 ScionX. All rights reserved.
+            © 2025 ScionX. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">Privacy Policy</a>
